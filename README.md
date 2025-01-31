@@ -8,20 +8,24 @@
    cd ваш_репозиторий
 
 2. Установка зависимостей:
+    ```bash
     pip install -r requirements.txt
 
-3. Создайте файл .env и поместите туда следующие переменные:  
-  SANDBOX_TOKEN=ваш_токен_API_IMEI_CHECK  
-  AUTHORIZED_TOKENS=['ваш_токен_для_API']  
-  TELEGRAM_BOT_TOKEN=ваш_токен_Телеграм_бота  
-  AUTHORIZED_USERS=['юзернеймы_разрешенных_пользователей']  
+4. Создайте файл .env и поместите туда следующие переменные:
+    ```bash
+    SANDBOX_TOKEN=ваш_токен_API_IMEI_CHECK  
+    AUTHORIZED_TOKENS=['ваш_токен_для_API']  
+    TELEGRAM_BOT_TOKEN=ваш_токен_Телеграм_бота  
+    AUTHORIZED_USERS=['юзернеймы_разрешенных_пользователей']  
 
 ## Использование
 
 1. Запуск Flask сервера:
-   python app.py
+    ```bash
+    python app.py
 
-2. Запуск Telegram-бота (в другом терминале):
-   python bot.py
+3. Запуск Telegram-бота (в другом терминале):
+    ```bash
+    python bot.py
 
-3. В Telegram найдите вашего бота и отправьте команду /start, чтобы начать взаимодействие. Затем отправьте IMEI для проверки.
+5. В Telegram найдите вашего бота и отправьте команду */start*, чтобы начать взаимодействие. Затем отправьте IMEI для проверки.
